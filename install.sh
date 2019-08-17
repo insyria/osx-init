@@ -10,6 +10,7 @@ PROD=$(softwareupdate -l |
 softwareupdate -i "$PROD" -v;
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+sudo -u $(stat -f "%Su" /dev/console) /bin/sh <<'END'
 brew install \
   git \
   nmap \
