@@ -12,6 +12,12 @@ softwareupdate -i "$PROD" --verbose;
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 #sudo -u $(stat -f "%Su" /dev/console) /bin/sh <<'END'
 export PATH=$PATH:/usr/local/git/bin:/usr/local/bin
+
+#fix sudo: no tty present and no askpass program specified
+sudo su
+echo 'user ALL=(ALL)  NOPASSWD: ALL' >>/etc/sudoers
+exit
+
 brew install \
   git \
   nmap \
