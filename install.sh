@@ -7,7 +7,7 @@ PROD=$(softwareupdate -l |
   head -n 1 | awk -F"*" '{print $2}' |
   sed -e 's/^ *//' |
   tr -d '\n')
-softwareupdate -i "$PROD" -v;
+softwareupdate -i "$PROD" --verbose;
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 #sudo -u $(stat -f "%Su" /dev/console) /bin/sh <<'END'
