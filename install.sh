@@ -32,4 +32,38 @@ brew cask install \
   google-chrome \
   java \
   vlc \
+  sequel-pro \
+  wire \
+  microsoft-office \ 
+  gpg-suite \ 
+  visual-studio-code \ 
+  whatsapp \ 
+  signal \ 
+  google-drive-file \ 
+  google-backup-and-sync \ 
+  tunnelblick \ 
+  textmate \ 
+  adobe-creative-cloud \ 
+  tresorit \ 
+  freedome \ 
+  outline-manager \ 
+  wireshark \ 
+  teamviewer \
+  the-unarchiver \ 
+  spotify \ 
+  nextcloud \ 
+  tor-browser \
+  charles \ 
+  clipgrab \ 
+  slack \
+  postman \
+  veracrypt \ 
+  keka \ 
+  kekadefaultapp \ 
+  wickrme \ 
+;
+
+brew tap insyria/CaskApps;
+brew cask install \
+  eset-endpoint-security \
 ;
