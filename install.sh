@@ -61,6 +61,8 @@ brew cask install \
   keka \ 
   kekadefaultapp \ 
   wickrme \ 
+  iterm2 \
+  vmware-fusion \
 ;
 
 brew tap insyria/CaskApps;
