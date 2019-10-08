@@ -24,6 +24,7 @@ brew install \
   openssl \
   python \
   redis \
+  zsh \
 ;
 brew tap caskroom/cask;
 brew cask install \
