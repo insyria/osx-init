@@ -37,33 +37,33 @@ brew cask install \
   vlc \
   sequel-pro \
   wire \
-  microsoft-office \ 
-  gpg-suite \ 
-  visual-studio-code \ 
-  whatsapp \ 
-  signal \ 
-  google-drive-file \ 
-  google-backup-and-sync \ 
-  tunnelblick \ 
-  textmate \ 
-  adobe-creative-cloud \ 
-  tresorit \ 
-  freedome \ 
-  outline-manager \ 
-  wireshark \ 
+  microsoft-office \
+  gpg-suite \
+  visual-studio-code \
+  whatsapp \
+  signal \
+  google-drive-file \
+  google-backup-and-sync \
+  tunnelblick \
+  textmate \
+  adobe-creative-cloud \
+  tresorit \
+  freedome \
+  outline-manager \
+  wireshark \
   teamviewer \
-  the-unarchiver \ 
-  spotify \ 
-  nextcloud \ 
+  the-unarchiver \
+  spotify \
+  nextcloud \
   tor-browser \
-  charles \ 
-  clipgrab \ 
+  charles \
+  clipgrab \
   slack \
   postman \
-  veracrypt \ 
+  veracrypt \
   keka \ 
-  kekadefaultapp \ 
-  wickrme \ 
+  kekadefaultapp \
+  wickrme \
   iterm2 \
   vmware-fusion \
 ;
