@@ -25,6 +25,7 @@ brew install \
   python \
   redis \
   zsh \
+  zsh-completions \
 ;
 brew tap caskroom/cask;
 brew cask install \
