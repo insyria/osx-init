@@ -26,6 +26,7 @@ brew install \
   redis \
   zsh \
   zsh-completions \
+  ssh-copy-id \
 ;
 brew tap caskroom/cask;
 brew cask install \
