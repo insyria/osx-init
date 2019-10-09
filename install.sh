@@ -28,7 +28,7 @@ brew install \
   zsh-completions \
   ssh-copy-id \
 ;
-brew tap caskroom/cask;
+brew tap homebrew/cask;
 brew cask install \
   dropbox \
   firefox \
