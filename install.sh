@@ -42,7 +42,7 @@ brew cask install \
   visual-studio-code \
   whatsapp \
   signal \
-  google-drive-file \
+  google-drive-file-stream \
   google-backup-and-sync \
   tunnelblick \
   textmate \
@@ -72,3 +72,5 @@ brew tap insyria/CaskApps;
 brew cask install \
   eset-endpoint-security \
 ;
+
+curl https://raw.githubusercontent.com/insyria/osx-init/master/macos.sh | sh
