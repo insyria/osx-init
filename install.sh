@@ -66,6 +66,8 @@ brew cask install \
   wickrme \
   iterm2 \
   vmware-fusion \
+  keepassx \ 
+  quickbooks-online \
 ;
 
 brew tap insyria/CaskApps;
