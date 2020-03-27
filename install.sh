@@ -27,6 +27,11 @@ brew install \
   zsh \
   zsh-completions \
   ssh-copy-id \
+  gcc \
+  npm \
+  ffmpeg \
+  imagemagick \
+  giflossy \
 ;
 brew tap homebrew/cask;
 brew cask install \
