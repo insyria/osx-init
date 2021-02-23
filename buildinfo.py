@@ -21,30 +21,6 @@
 #
 import subprocess
 
-def get_hw_model():
-    '''Gets the local system ModelIdentifier'''
-    sysctl_cmd = ['/usr/sbin/sysctl', 'hw.model']
-    try:
-        sysctl_output = subprocess.check_output(sysctl_cmd)
-        hw_model = sysctl_output.decode('utf8').split(" ")[-1].split("\n")[0]
-    except subprocess.CalledProcessError as err:
-        raise ReplicationError(err)
-    return hw_model
-
-def get_board_id():
-    '''Gets the local system board ID'''
-    ioreg_cmd = ['/usr/sbin/ioreg', '-p', 'IODeviceTree', '-r', '-n', '/', '-d', '1']
-    try:
-        ioreg_output = subprocess.check_output(ioreg_cmd).splitlines()
-        for line in ioreg_output:
-            line_decoded = line.decode('utf8')
-            if 'board-id' in line_decoded:
-                board_id = line_decoded.split("<")[-1]
-                board_id = board_id[board_id.find('<"')+2:board_id.find('">')]
-                return board_id
-    except subprocess.CalledProcessError as err:
-        raise ReplicationError(err)
-
 
 def get_current_build_info():
     '''Gets the local system build'''
@@ -63,10 +39,6 @@ def get_current_build_info():
     return build_info
 
 # show this Mac's info
-hw_model = get_hw_model()
-board_id = get_board_id()
 build_info = get_current_build_info()
-print('%-17s: %s' % ('Model Identifier', hw_model))
-print('%-17s: %s' % ('Board ID', board_id))
 print('%-17s: %s' % ('OS Version', build_info[0]))
 print('%-17s: %s\n' % ('Build ID', build_info[1]))
